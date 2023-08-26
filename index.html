@@ -9,7 +9,7 @@
   </head>
   <body>
     <section id="sidebar">
-      <img id="headshot" loading="lazy" src="headshot.jpeg"/>
+      <img id="headshot" loading="lazy" src="images/headshot.jpeg"/>
       <header>Ryan Lehmer</header>
       <nav id="navbar">
         <ul>
@@ -18,13 +18,15 @@
           <li><a class="nav-link" href="#activities-and-clubs">Activites and Clubs</a></li>
           <li><a class="nav-link" href="#technical-skills">Technical Skills</a></li>
         </ul>
-        <div class="social-icons">
-          <a id="profile-link" href="https://www.linkedin.com/in/ryan-lehmer-831152251/" target="_blank" class="fa fa-linkedin-square">
+        <div class="icon">
+          <a id="profile-link" href="https://www.linkedin.com/in/ryan-lehmer-831152251/" style="font-size: 24px" target="_blank" class="fa fa-linkedin-square"><span>https://www.linkedin.com/in/ryan-lehmer-831152251/</span>
           </a>
         </div>
-        <div class="social-icons">
-          <a id="profile-link" href="https://github.com/NotEnoughCharact" target="_blank" class="fa fa-github">
-          </a>
+        <div class="icon">
+          <a id="profile-link" href="https://github.com/NotEnoughCharact" style="font-size: 24px" target="_blank" class="fa fa-github"><span>https://github.com/NotEnoughCharact</span></a>
+        </div>
+        <div class="icon">
+          <a id="profile-link" href="files/Ryan's Resume.pdf" style="font-size: 24px" target="_blank" class="fa fa-file-pdf-o"><span>Resume</span></a>
         </div>
       </nav>
     </section>
@@ -33,22 +35,34 @@
       <p>Thank you for stopping by. I am a recent Computer Science graduate from CSU chico loking to help people find solutions to their problems. With a strong background in CS fundamentals and a desire to learn, I am hoping to be able to help whichever company I end up being a part of. My interests outside of my academic area lie in gaming and tennis.</p>
     <section id="projects">
       <h1>Projects</h1>
-      <ul>
-        <li class="project-tile">
-          <h3><a target="_blank" href="https://github.com/NotEnoughCharact/Capstone_game">Senior Project</a></h3>
-          <p>Worked solo to create a 2d scroller game in Unity using C# for the scripts.</p>
-        </li>
-        <li class="project-tile">
-          <h3><a target="_blank" href="https://github.com/NotEnoughCharact/CSCI-515/tree/main/projects/csci515/src/p6">Compiler Construction</a></h3>
-          <p>Created a complete scanner and a parser from scratch for a C based language written by Tyson Henry
-(CSU Chico Computer Science department head), which then used C++ code to run.</p>
-        </li>
-        <li class="project-tile">
+      <div>
+        <h3><a target="_blank" href="https://github.com/NotEnoughCharact/Capstone_game">Senior Capstone</a></h3>
+        <div class="row">
+          <div class="side-pic">
+            <img src="images/game.png"/>
+          </div>
+          <div class="writings">
+            <p>Worked solo to learn Unity and C# to be able to create and deliver a Mario style 2d scroller game. The art assets were grabbed from a few free asset packs on the Unity store and then the scripts were written from scratch by me. This game has three levels. A tutorial, a normal level, and then a boss level.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3><a target="_blank" href="https://github.com/NotEnoughCharact/CSCI-515/tree/main/projects/csci515/src/p6">Compiler Construction</a></h3>
+        <div class="row">
+          <div class="side-pic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEYCBOXoCiWN5OIzs_NFHWXZ1sqH433QKyTA&usqp=CAU"/>
+          </div>
+          <div class="writings">
+            <p>Created a complete scanner and a parser from scratch for a C based language written by Tyson Henry
+    (CSU Chico Computer Science department head as of 2022), which then used C++ code to run. This compiler implimented bison and lex for parsing.</p>
+          </div>
+        </div>
+      </div>
+      <div class="project-only">
           <h3>Scripting</h3>
           <p>Designed and implemented a program using Python and BASH to periodically backup files to a cloud
 server</p>
-        </li>
-      </ul>
+      </div>
     </section>
     <section id="activities-and-clubs">
       <h1>Activities and School Clubs</h1>

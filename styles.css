@@ -17,28 +17,36 @@ body{
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 10px;
   border: 3px solid #000000;
   background-color: #9d2235
 }
 
 #headshot{
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: width;
   margin: auto;
   padding-bottom: 10px;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 header{
+  padding-top: 15px;
   font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
 
+h1{
+  text-align: center;
+  font-size: 28px;
+}
+
 a{
   text-decoration: none;
 }
+
 
 li{
   list-style-type: none;
@@ -61,16 +69,56 @@ nav li:last-of-type{
 
 nav a{
   color: #ffffff;
+}
+nav li a{
   text-align: center;
 }
 
-nav div a{
+nav .icon{
   padding: 10px;
-  padding-left: 40%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.icon span{
+  padding-left: 5px;
+  word-wrap: normal;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+#projects .row{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+#projects .side-pic{
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+#projects .writings{
+  width: 70%;
+}
+
+#projects h3{
+  text-align: center;
+}
+
+#projects .writings p{
+  padding-left: 10px;
+}
+
+#projects img{
+  height: 150px;
+  max-width: 100%;
 }
 
 #projects a{
-  color: black;
+  text-decoration: underline;
+  color: blue;
 }
 
 #projects a:hover{
@@ -89,4 +137,25 @@ nav div a{
   body{
     left: 320px;
   }
+}
+
+@media(max-width: 600px){
+  #projects .row{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+  #projects .side-pic{
+    width: 100%;
+  }
+  #projects .writings{
+    width: 100%;
+  }
+  #projects img{
+    height: 100%;
+  }
+  .icon span{
+    display: none;
+  }
+
 }
